@@ -1,0 +1,14 @@
+node_modules
+package-lock.json
+pnpm-lock.yaml
+.env
+logs
+dist
+docs/*
+!docs/example.md
+db/*
+memory/*
+chat_logs/*
+tmp/*
+prompttest.txt
+agentTest.ts

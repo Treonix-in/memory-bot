@@ -1,0 +1,73 @@
+{
+  "name": "memory-chatterbox",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "private": "true",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc --declaration --outDir dist/",
+    "dev": "tsx -r dotenv/config src/index.ts --inspect",
+    "start": "npm run build && node -r dotenv/config dist/index.js",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --list-different \"**/*.ts\"",
+    "update-readme": "tsx -r dotenv/config src/updateReadme.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://"
+  },
+  "keywords": [
+    "ai-chatbot",
+    "nodejs",
+    "context-aware",
+    "chatgpt",
+    "gpt-4"
+  ],
+  "author": "Gordon Mickel <gordon@dociq.io> (https://bytesizedbrainwaves.substack.com/)",
+  "license": "MIT",
+  "homepage": "https://bytesizedbrainwaves.substack.com/",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/common-tags": "^1.8.2",
+    "@types/crawler": "^1.2.3",
+    "@types/fs-extra": "^11.0.2",
+    "@types/node": "^20.8.3",
+    "@types/turndown": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cheerio": "^1.0.0-rc.12",
+    "common-tags": "^1.8.2",
+    "crawler": "^1.4.0",
+    "d3-dsv": "2.0.0",
+    "dotenv": "^16.3.1",
+    "epub2": "^3.0.2",
+    "fs-extra": "^11.1.1",
+    "hnswlib-node": "1.4.2",
+    "html-to-text": "^9.0.5",
+    "langchain": "^0.0.163",
+    "mammoth": "^1.6.0",
+    "ora": "^7.0.1",
+    "pdf-parse": "^1.1.1",
+    "turndown": "^7.1.2",
+    "youtube-transcript": "^1.0.6"
+  }
+}
