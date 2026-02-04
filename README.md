@@ -6,8 +6,6 @@ Memory Bot can be used for a variety of purposes, including context-aware conten
 
 Memory Bot supports adding various types of context, such as documents, web pages and youtube videos.
 
-This project was originally featured on my blog [ByteSizedBrainwaves - Building a GPT-4 Powered Chatbot with Node.js: Unlimited Context and Chat History in Under 100 Lines of Code
-](https://medium.com/byte-sized-brainwaves/unlimited-chatbot-context-and-chat-history-in-under-100-lines-of-code-with-langchain-and-node-js-1190fcc20708).
 
 ## Features
 
@@ -173,17 +171,12 @@ After starting the chatbot, simply type your questions or messages and press Ent
 - `/toggle-window-memory` (/wm) - Toggles the window buffer memory (MemoryBot's short-term transient memory) on or off.
 <!-- COMMANDS_END -->
 
-## Documentation
 
-For a detailed guide on building and customizing the Bot, please refer to the blog post on [ByteSizedBrainwaves](https://bytesizedbrainwaves.hashnode.dev/series/ai-conversations).
 
 ## Considerations
 
 Consider the implications of sharing any sensitive content with third parties. Any context or history that is generated is sent to OpenAI to create the necessary embeddings. Always ensure that you're adhering to your organization's security policies and best practices to protect your valuable assets.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
